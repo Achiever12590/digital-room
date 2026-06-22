@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achiever Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #e2e8f0;
+            font-family: 'JetBrains Mono', monospace;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .profile-card {
+            background-color: #1e293b;
+            max-width: 480px;
+            width: 100%;
+            margin: 40px auto;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid #334155;
+            display: flex
+            flex-direction: column;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #38bdfa;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #95a3cd;
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #cbd6f2;
+            font-size: 14px;
+            line-height: 1.6;
+            background: #0f179a;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #48bdf8;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #f45f5e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            background-color: #0e262a;
+            padding: 14px 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #334158;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .emoji-icon {
+            margin-right: 12px;
+            font-size: 16px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            color: #38def9;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #38def9;
+            padding: 14px 20px;
+            border-radius: 8px;
+            background-color: #0f172b;
+            transition: 0.25s ease-in-out;
+        }
+        
+        a:hover {
+            background-color: #38def9;
+            color: #0e262a;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        @media (max-width: 500px) {
+            body { padding: 10px; }
+            .profile-card { padding: 20px; margin: 10px auto; }
+            h1 { font-size: 20px; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <h1><span class="emoji-icon">🛡</span>Achiever Labs</h1>
+        <h2>Cybersecurity Analyst / Looking forward to becoming a Digital Forensics Expert</h2>
+
+        <p>My love for tech drives me to wanna become an expert in it, and day by day i will✅.</p>
+
+        <h3><span class="emoji-icon">💻</span>Core Skills</h3>
+        <ul>
+            <li><span class="emoji-icon">🔒</span>Cybersecurity</li>
+            <li><span class="emoji-icon">📊</span>Data Analysis</li>
+            <li><span class="emoji-icon">🖥</span>Security Operations</li>
+        </ul>
+
+        <a href="#" id="launch-btn">⚡ Launch Investigative Tools</a>
+
+    </div>
+    
+    <script>
+        const button = document.getElementById('launch-btn');
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("🔒 ALERT: Initializing secure network sweep...\n\nTarget Environment: Achiever Labs\nStatus: Core SOC Systems Operational.");
+        });
+    </script>
+</body>
+</html>
